@@ -18,7 +18,7 @@ struct Model
         volume::AbstractFloat=1.0,
         name::String="", 
         annotation::String="", 
-        timespan::AbstractRange{Int}=AbstractRange{Int}(),
+        timespan::AbstractRange{Int}=1:100,
         parameters::Vector{Parameter}=Vector{Parameter}(),
         species::Vector{Species}=Vector{Species}(),
         reactions::Vector{Reaction}=Vector{Reaction}()

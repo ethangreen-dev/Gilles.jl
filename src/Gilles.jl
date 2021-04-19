@@ -1,5 +1,7 @@
 module Gilles
 
+using Reexport
+
 include("parameters.jl")
 include("species.jl")
 include("reactions.jl")
@@ -11,7 +13,8 @@ export
     Species,
     Parameter,
     Reaction,
-    Model,
-    Solvers
+    Model
+
+@reexport using .Solvers
 
 end
